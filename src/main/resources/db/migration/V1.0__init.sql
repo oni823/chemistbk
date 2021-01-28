@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS sys_user;
+CREATE TABLE `sys_user`
+(
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  user_name VARCHAR(250) NOT NULL,
+  github_id VARCHAR(250) DEFAULT NULL
+);
+
+DROP TABLE IF EXISTS sys_store;
+CREATE TABLE `sys_store`
+(
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  user_id INT NOT NULL
+);
